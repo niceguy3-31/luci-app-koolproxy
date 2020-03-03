@@ -91,7 +91,8 @@ ifeq ($(ARCH),arm)
 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
 endif
 ifneq (,$(findstring arm,$(ARCH)))
-endif   $(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
+	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
+endif   
 endef
 
 $(eval $(call BuildPackage,luci-app-koolproxy))
