@@ -90,7 +90,7 @@ endif
 ifeq ($(ARCH),arm)
 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
 endif
-ifneq (,$(findstring arm,$(ARCH)))
+ifneq (,$(findstring ar,$(ARCH)))
 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
 endif   
 endef
